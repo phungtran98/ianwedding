@@ -840,27 +840,6 @@ button {
   animation-play-state: paused;
 }
 
-.disc__status {
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  background-color: #a2a2a2;
-}
-
-.disc.is-playing .disc__status {
-  background-color: #21bd87;
-  animation: pulse 1.4s ease-out infinite;
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(33, 189, 135, 0.7); }
-  100% { box-shadow: 0 0 0 8px rgba(33, 189, 135, 0); }
-}
-
 .disc.is-playing .disc__vinyl {
   animation-play-state: running;
 }
