@@ -7,7 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=JetBrains+Mono:wght@400;700;800&family=Architects+Daughter&family=Outfit:wght@400;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=JetBrains+Mono:wght@400;700;800&family=Architects+Daughter&family=Outfit:wght@400;500;700&family=Plus+Jakarta+Sans:wght@700;800&family=Montserrat:wght@700&family=Mulish:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -39,13 +39,21 @@
           </div>
 
           <div class="roadmap__track">
-            <img class="roadmap__dot" src="assets/icons/ellipse-2.svg" alt="">
-            <span class="roadmap__arrow"><img src="assets/icons/arrow-2.png" alt=""></span>
-            <img class="roadmap__dot" src="assets/icons/ellipse-3.svg" alt="">
-            <span class="roadmap__arrow"><img src="assets/icons/arrow-4.png" alt=""></span>
-            <img class="roadmap__dot" src="assets/icons/ellipse-2.svg" alt="">
-            <span class="roadmap__arrow"><img src="assets/icons/arrow-4.png" alt=""></span>
-            <span class="roadmap__dot roadmap__dot--live"><img src="assets/icons/ellipse-5.svg" alt=""></span>
+            <span class="roadmap__stop">
+              <img class="roadmap__dot" src="assets/icons/ellipse-2.svg" alt="">
+              <span class="roadmap__arrow"><img src="assets/icons/arrow-2.png" alt=""></span>
+            </span>
+            <span class="roadmap__stop">
+              <img class="roadmap__dot" src="assets/icons/ellipse-3.svg" alt="">
+              <span class="roadmap__arrow"><img src="assets/icons/arrow-4.png" alt=""></span>
+            </span>
+            <span class="roadmap__stop">
+              <img class="roadmap__dot" src="assets/icons/ellipse-2.svg" alt="">
+              <span class="roadmap__arrow"><img src="assets/icons/arrow-4.png" alt=""></span>
+            </span>
+            <span class="roadmap__stop">
+              <span class="roadmap__dot roadmap__dot--live"><img src="assets/icons/ellipse-5.svg" alt=""></span>
+            </span>
           </div>
 
           <div class="roadmap__cards">
@@ -176,21 +184,22 @@
       <div class="team-feedback__inner">
         <h2 class="team-feedback__title">Team Feedback &amp; Code Review</h2>
         <p class="team-feedback__desc">
-          Pull requests submitted by the core team. Click each avatar to inspect the deployment notes and warm wishes.
+          Pull requests submitted by the core team. <span class="team-feedback__hint">Click each avatar</span> to inspect the deployment notes and warm wishes.
         </p>
 
         <div class="team-feedback__board">
           <div class="team-row">
+            <img loading="lazy" decoding="async" class="team-feedback__line" src="assets/icons/board-line.svg" alt="">
 
             <div class="team-col">
               <div class="team-stack">
-                <div class="team-group team-group--white">
+                <div class="team-group team-group--white team-group--float">
                   <p class="team-group__text">✨No team's Blessing✨</p>
                 </div>
 
                 <button type="button" class="person" style="--h: 302px; --bg: #ffffff" data-name="Phu Tran" data-role="technical lead">
                   <div class="person__avatar">
-                    <img src="assets/images/phu-tran.png" alt="Phu Tran">
+                    <img loading="lazy" decoding="async" src="assets/images/phu-tran.jpg" alt="Phu Tran">
                     <p class="person__name"><span>Phu Tran</span><span>(technical lead)</span></p>
                   </div>
                 </button>
@@ -199,7 +208,7 @@
 
                 <button type="button" class="person" style="--h: 346px; --bg: #ffffff" data-name="Duc Le - Daniel" data-role="Dev Ops">
                   <div class="person__avatar">
-                    <img src="assets/images/duc-le.png" alt="Duc Le">
+                    <img loading="lazy" decoding="async" src="assets/images/duc-le.jpg" alt="Duc Le">
                     <p class="person__name"><span>Duc Le - Daniel</span><span>(Dev Ops)</span></p>
                   </div>
                 </button>
@@ -208,14 +217,14 @@
 
                 <button type="button" class="person" style="--h: 368px; --bg: #ffffff" data-name="Thuy Le" data-role="Designer">
                   <div class="person__avatar">
-                    <img src="assets/images/thuy-le.jpg" alt="Thuy Le">
+                    <img loading="lazy" decoding="async" src="assets/images/thuy-le.jpg" alt="Thuy Le">
                     <p class="person__name"><span>Thuy le (Designer)</span></p>
                   </div>
                 </button>
               </div>
 
               <div class="team-stack">
-                <div class="team-group team-group--tall team-group--blue">
+                <div class="team-group team-group--tall team-group--blue team-group--float">
                   <p class="team-group__text">✨Platform Team's Blessing✨</p>
                 </div>
 
@@ -223,16 +232,16 @@
 
                 <button type="button" class="person" style="--h: 284px; --bg: #b9e6ff" data-name="Chrysanne" data-role="BA">
                   <div class="person__avatar">
-                    <img src="assets/images/chrysanne.png" alt="Chrysanne">
+                    <img loading="lazy" decoding="async" src="assets/images/chrysanne.jpg" alt="Chrysanne">
                     <p class="person__name person__name--blue"><span>Chrysanne (BA)</span></p>
                   </div>
                 </button>
 
                 <span class="team-arrow"><img src="assets/icons/arrow-8.png" alt=""></span>
 
-                <button type="button" class="person" style="--h: 614px; --bg: #b9e6ff; --avatar-bg: #b9e6ff" data-name="Trung Do" data-role="Dev">
+                <button type="button" class="person" style="--h: 614px; --bg: #b9e6ff" data-name="Trung Do" data-role="Dev">
                   <div class="person__avatar">
-                    <p class="person__initials" style="--c: #0c72bb">TD</p>
+                    <img loading="lazy" decoding="async" class="person__photo--trung" src="assets/images/trung-do.jpg" alt="Trung Do">
                     <p class="person__name person__name--blue"><span>Trung Do (Dev)</span></p>
                   </div>
                 </button>
@@ -251,7 +260,7 @@
             <div class="team-col">
               <button type="button" class="person" style="--h: 548px; --bg: #ffffff" data-name="Khoa Vu" data-role="BOSS">
                 <div class="person__avatar">
-                  <img src="assets/images/khoa-vu.png" alt="Khoa Vu">
+                  <img loading="lazy" decoding="async" src="assets/images/khoa-vu.jpg" alt="Khoa Vu">
                   <p class="person__name"><span>Khoa Vu</span><span>(BOSS)</span></p>
                 </div>
               </button>
@@ -259,16 +268,16 @@
               <div class="team-stack">
                 <button type="button" class="person" style="--h: 280px; --bg: #e6cef9" data-name="Trinh" data-role="QC lead">
                   <div class="person__avatar">
-                    <img src="assets/images/trinh.png" alt="Trinh">
+                    <img loading="lazy" decoding="async" class="person__photo--trinh" src="assets/images/trinh.jpg" alt="Trinh">
                     <p class="person__name person__name--purple"><span>Trinh (QC lead)</span></p>
                   </div>
                 </button>
 
                 <span class="team-arrow"><img src="assets/icons/arrow-9.svg" alt=""></span>
 
-                <button type="button" class="person" style="--h: 560px; --bg: #e5cdf8; --avatar-bg: #ead2ea" data-name="Jon V" data-role="Data lead">
+                <button type="button" class="person" style="--h: 560px; --bg: #e6cef9" data-name="Jon V" data-role="Data lead">
                   <div class="person__avatar">
-                    <p class="person__initials" style="--c: #8e54be">JV</p>
+                    <img loading="lazy" decoding="async" class="person__photo--jon" src="assets/images/jon-v.jpg" alt="Jon V">
                     <p class="person__name person__name--purple"><span>Jon V</span><span>(Data lead)</span></p>
                   </div>
                 </button>
@@ -277,7 +286,7 @@
               <div class="team-stack">
                 <button type="button" class="person" style="--h: 350px; --bg: #b9e6ff" data-name="Quan Huynh" data-role="Dev">
                   <div class="person__avatar">
-                    <img src="assets/images/quan-huynh.png" alt="Quan Huynh">
+                    <img loading="lazy" decoding="async" src="assets/images/quan-huynh.jpg" alt="Quan Huynh">
                     <p class="person__name person__name--blue"><span>Quan Huynh (Dev)</span></p>
                   </div>
                 </button>
@@ -286,7 +295,7 @@
 
                 <button type="button" class="person" style="--h: 240px; --bg: #b9e6ff" data-name="Phung Tran" data-role="Dev">
                   <div class="person__avatar">
-                    <img src="assets/images/phung-tran.png" alt="Phung Tran">
+                    <img loading="lazy" decoding="async" class="person__photo--phung" src="assets/images/phung-tran.jpg" alt="Phung Tran">
                     <p class="person__name person__name--blue"><span>Phung Tran (Dev)</span></p>
                   </div>
                 </button>
@@ -295,7 +304,7 @@
 
                 <button type="button" class="person" style="--h: 308px; --bg: #b9e6ff" data-name="Team QC" data-role="">
                   <div class="person__avatar">
-                    <img src="assets/images/trinh.png" alt="Team QC">
+                    <img loading="lazy" decoding="async" class="person__photo--team-qc" src="assets/images/team-qc.jpg" alt="Team QC">
                     <p class="person__name person__name--blue"><span>Team QC</span></p>
                   </div>
                 </button>
@@ -310,7 +319,7 @@
 
             <div class="team-col">
               <div class="team-stack">
-                <div class="team-group team-group--purple">
+                <div class="team-group team-group--purple team-group--float">
                   <p class="team-group__text">✨AI team's Blessing✨</p>
                 </div>
 
@@ -319,31 +328,31 @@
                 <button type="button" class="person" style="--h: 240px; --bg: #e5cdf8; --avatar-bg: #ead2ea" data-name="By Le" data-role="BA">
                   <div class="person__avatar">
                     <p class="person__initials" style="--c: #8e54be">BL</p>
-                    <p class="person__name person__name--purple"><span>By Le (BA)</span></p>
+                    <p class="person__name person__name--andy"><span>By Le (BA)</span></p>
                   </div>
                 </button>
 
                 <span class="team-arrow"><img src="assets/icons/arrow-6.png" alt=""></span>
 
-                <button type="button" class="person" style="--h: 280px; --bg: #e5cdf8" data-name="Andy" data-role="dev lead">
+                <button type="button" class="person" style="--h: 280px; --bg: #e6cef9" data-name="Andy" data-role="dev lead">
                   <div class="person__avatar">
-                    <img src="assets/images/andy.png" alt="Andy">
-                    <p class="person__name person__name--purple"><span>Andy (dev lead)</span></p>
+                    <img loading="lazy" decoding="async" class="person__photo--andy" src="assets/images/andy.jpg" alt="Andy">
+                    <p class="person__name person__name--andy"><span>Andy (dev)</span></p>
                   </div>
                 </button>
 
                 <span class="team-arrow"><img src="assets/icons/arrow-12.png" alt=""></span>
 
-                <button type="button" class="person" style="--h: 412px; --bg: #e5cdf8" data-name="Danh" data-role="AI lead">
+                <button type="button" class="person" style="--h: 418px; --bg: #e6cef9" data-name="Danh" data-role="AI lead">
                   <div class="person__avatar">
-                    <img src="assets/images/danh.png" alt="Danh">
+                    <img loading="lazy" decoding="async" class="person__photo--danh" src="assets/images/danh.jpg" alt="Danh">
                     <p class="person__name person__name--purple"><span>Danh</span><span>(AI lead)</span></p>
                   </div>
                 </button>
               </div>
 
               <div class="team-stack">
-                <div class="team-group team-group--mint">
+                <div class="team-group team-group--mint team-group--float">
                   <p class="team-group__text">✨React Team's Blessing✨</p>
                 </div>
 
@@ -351,9 +360,9 @@
 
                 <button type="button" class="person" style="--h: 516px; --bg: #c0ffea" data-name="React Stream" data-role="">
                   <div class="person__avatar person__avatar--stack">
-                    <div class="person__slice"><img src="assets/images/react-1.png" alt=""></div>
-                    <div class="person__slice"><img src="assets/images/react-2.png" alt=""></div>
-                    <div class="person__slice"><img src="assets/images/react-3.png" alt=""></div>
+                    <div class="person__slice"><img loading="lazy" decoding="async" class="person__photo--react-1" src="assets/images/react-1.jpg" alt=""></div>
+                    <div class="person__slice"><img loading="lazy" decoding="async" class="person__photo--react-2" src="assets/images/react-2.jpg" alt=""></div>
+                    <div class="person__slice"><img loading="lazy" decoding="async" class="person__photo--react-3" src="assets/images/react-3.jpg" alt=""></div>
                     <p class="person__name person__name--green"><span>React Stream</span></p>
                   </div>
                 </button>
@@ -368,8 +377,8 @@
 
                 <button type="button" class="person" style="--h: 477px; --bg: #ffcbcf" data-name="Pro. Support" data-role="">
                   <div class="person__avatar person__avatar--stack">
-                    <div class="person__slice"><img src="assets/images/pro-support-1.png" alt=""></div>
-                    <div class="person__slice"><img src="assets/images/phung-tran.png" alt=""></div>
+                    <div class="person__slice"><img loading="lazy" decoding="async" class="person__photo--ps-1" src="assets/images/pro-support-1.jpg" alt=""></div>
+                    <div class="person__slice"><img loading="lazy" decoding="async" class="person__photo--ps-2" src="assets/images/pro-support-2.jpg" alt=""></div>
                     <p class="person__name person__name--pink"><span>Pro. Support</span></p>
                   </div>
                 </button>
@@ -380,12 +389,67 @@
         </div>
       </div>
     </section>
+
+    <section class="memory" id="memory">
+      <div class="memory__inner">
+        <div class="memory__stage">
+          <div class="memory__bg">
+            <img loading="lazy" decoding="async" src="assets/images/memory-bg.webp" alt="">
+          </div>
+          <h2 class="memory__title">Memory Lane: Core Commit &amp; Logs</h2>
+          <p class="memory__desc">In the heart of the entire team, you’re not just a PO — you’re someone who is always devoted, responsible, full of great ideas, and ready to pull all-nighters with the crew for every deployment. Click on each Polaroid photo to relive our memories!</p>
+          <article class="memory-card memory-card--1" tabindex="0">
+            <span class="memory-card__tape"></span>
+            <h3 class="memory-card__title">Sleepless Nights<br>on Deployment Watch</h3>
+            <p class="memory-card__body">Remembering those late nights when we all stayed up just to ensure a smooth launch. You were always the last one standing, double-checking every single detail with an admirable sense of responsibility.</p>
+            <img loading="lazy" decoding="async" src="assets/images/memory-1.webp" alt="">
+          </article>
+          <article class="memory-card memory-card--2" tabindex="0">
+            <span class="memory-card__tape"></span>
+            <h3 class="memory-card__title">A Calm Anchor</h3>
+            <p class="memory-card__body">What we appreciate most about you is your composure, patience in listening, and respect for everyone's ideas. No matter how high the pressure got, your gentle and easygoing nature always kept the team atmosphere light and united.</p>
+            <img loading="lazy" decoding="async" src="assets/images/memory-2.webp" alt="">
+          </article>
+          <article class="memory-card memory-card--3" tabindex="0">
+            <span class="memory-card__tape"></span>
+            <h3 class="memory-card__title">From "Deploying Projects" to "Deploying a Happy Home"</h3>
+            <p class="memory-card__body">Today, the whole team proudly watches you step into the biggest and most beautiful project of your life. We truly believe that with your dedication, responsibility, and warm heart, you are going to be the most wonderful husband!</p>
+            <img loading="lazy" decoding="async" src="assets/images/memory-3.webp" alt="">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="final" id="final">
+      <div class="final__card">
+        <h2 class="final__title">Ready for a Radiant New Chapter!</h2>
+        <p class="final__desc">Thank you for all your willingness to listen, and your wonderful team spirit all the time. There’s one final heartfelt gift from the entire team waiting for you to open!</p>
+        <button type="button" class="final__cta" id="final-open">🎁 Open the Final Production Gift from the Team</button>
+      </div>
+    </section>
   </main>
 
-  <button type="button" class="disc" id="disc-toggle" aria-label="Pause music">
-    <span class="disc__vinyl"></span>
+  <div class="popup" id="popup">
+    <div class="popup__dialog" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+      <div class="popup__head">
+        <h2 class="popup__title" id="popup-title">Dear our beloved Groom ❤️</h2>
+        <button type="button" class="popup__close" id="popup-close" aria-label="Close">
+          <img src="assets/icons/close.svg" alt="">
+        </button>
+      </div>
+      <div class="popup__letter">
+        <p>If life is a giant system, today is officially the most meaningful Go-Live day of your life! The entire team deeply appreciates your dedication, responsibility, late nights staying up with the crew to watch over deployments, and the gentle, warm energy you always bring to everyone.</p>
+        <p>Wishing the happy couple a lifetime of happiness, your little family always filled with laughter, "your love always staying at 99.999% uptime, all conflicts gracefully resolved, and your treasure trove of happiness scaling stronger with every passing year!"</p>
+      </div>
+      <button type="button" class="popup__cta" id="popup-cta">✨ Launch more fireworks</button>
+      <p class="popup__sign">WITH LOVE &amp; BEST REGARDS,<br>The Project Team</p>
+    </div>
+  </div>
+
+  <button type="button" class="disc is-playing" id="disc-toggle" aria-label="Pause music">
+    <img class="disc__vinyl" src="assets/icons/music-icon.png" width="52" height="52" alt="">
   </button>
-  <audio id="bg-music" src="assets/audio/music.m4a" preload="auto" loop></audio>
+  <audio id="bg-music" src="assets/audio/music.m4a" preload="auto" autoplay loop></audio>
 
   <script src="js/main.js"></script>
 </body>
